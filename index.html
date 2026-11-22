@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Khen Ryan Sembrano | IT Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+  <!-- Animated Background Effects -->
+  <div class="bg-blobs" aria-hidden="true">
+    <div class="blob blob-1"></div>
+    <div class="blob blob-2"></div>
+    <div class="blob blob-3"></div>
+  </div>
+  <canvas id="particle-canvas" aria-hidden="true"></canvas>
+
+  <!-- Sticky Pill Navigation -->
+  <header class="navbar-wrapper">
+    <nav class="navbar" aria-label="Primary Navigation">
+      <a href="#about" class="brand">
+        <span class="brand-badge">KR</span>
+        <span class="brand-text">Khen Ryan</span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about" class="nav-pill active">About</a></li>
+        <li><a href="#skills" class="nav-pill">Skills</a></li>
+        <li><a href="#projects" class="nav-pill">Projects</a></li>
+        <li><a href="#contact" class="nav-pill">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<main class="container">
+    <!-- 1. ABOUT SECTION -->
+    <section id="about" class="section about-section">
+      <div class="glass-card about-card">
+        <div class="profile-column">
+          <div class="avatar-ring" id="avatarRing">
+            <img
+              src="leischeee_2.jpg"
+              alt="Khen Ryan Pusod Sembrano"
+              id="profileImg"
+              class="profile-photo"
+            />
+          </div>
+          <span class="status-pill">BSIT Student</span>
+        </div>
+
+        <div class="about-content">
+          <p class="eyebrow">Hello! Welcome to my IT Portfolio</p>
+          <h1>Khen Ryan Pusod Sembrano</h1>
+          <p class="course-line">
+            Bachelor of Science in Information Technology &bull; City College of Calamba
+          </p>
+          <p class="bio-text">
+            I am an IT undergraduate student passionate about building practical web systems,
+            configuring secure networks, and creating clean visual designs. Through my coursework
+            and capstone projects, I enjoy turning everyday problems into organized, user-friendly
+            digital solutions—from web-based appointment portals to brand graphics and cybersecurity
+            assessments.
+          </p>
+          <div class="about-actions">
+            <a href="#projects" class="btn btn-primary">View My Projects</a>
+            <a href="#contact" class="btn btn-secondary">Contact Me</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. SKILLS SECTION -->
+    <section id="skills" class="section">
+      <div class="section-header">
+        <span class="section-tag">What I Can Do</span>
+        <h2>Skills</h2>
+        <p>A mix of technical IT foundations and creative design tools I use in school and personal projects.</p>
+      </div>
+
+      <div class="skills-grid">
+        <!-- Technical Skills -->
+        <div class="glass-card skill-card">
+          <div class="skill-card-head">
+            <span class="icon-circle" aria-hidden="true">&#128187;</span>
+            <div>
+              <h3>Technical Skills</h3>
+              <p class="muted-small">Development, networking &amp; security</p>
+            </div>
+          </div>
+          <div class="pill-group">
+            <span class="skill-pill">HTML5 &amp; CSS3</span>
+            <span class="skill-pill">JavaScript</span>
+            <span class="skill-pill">PHP &amp; MySQL</span>
+            <span class="skill-pill">Visual Studio / VS Code</span>
+            <span class="skill-pill">Hostinger Web Deployment</span>
+            <span class="skill-pill">Cisco IOS &amp; Packet Tracer</span>
+            <span class="skill-pill">Network ACLs &amp; IPsec VPN</span>
+            <span class="skill-pill">CyberChef &amp; CTF Decoding</span>
+            <span class="skill-pill">Software Testing (ISO 25010)</span>
+            <span class="skill-pill">Data Privacy (RA 10173)</span>
+          </div>
+        </div>
+
+        <!-- Design Skills -->
+        <div class="glass-card skill-card">
+          <div class="skill-card-head">
+            <span class="icon-circle" aria-hidden="true">&#127912;</span>
+            <div>
+              <h3>Design Skills</h3>
+              <p class="muted-small">UI layouts, branding &amp; visual assets</p>
+            </div>
+          </div>
+          <div class="pill-group">
+            <span class="skill-pill">Figma Wireframing</span>
+            <span class="skill-pill">Canva</span>
+            <span class="skill-pill">Adobe Photoshop</span>
+            <span class="skill-pill">UI Layout &amp; Prototyping</span>
+            <span class="skill-pill">Brand Identity &amp; Logos</span>
+            <span class="skill-pill">Data Infographics</span>
+            <span class="skill-pill">Presentation Design</span>
+            <span class="skill-pill">Responsive Web Styling</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. PROJECTS SECTION -->
+    <section id="projects" class="section">
+      <div class="section-header">
+        <span class="section-tag">Selected Work</span>
+        <h2>Projects</h2>
+        <p>Here are some of the academic and personal IT projects I worked on.</p>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <article class="glass-card project-card">
+          <div class="project-preview preview-health" aria-label="Paikit Health Center System Preview">
+            <div class="browser-bar">
+              <span></span><span></span><span></span>
+              <small>paikit-health-portal.local</small>
+            </div>
+            <div class="mockup-body">
+              <div class="mockup-header-row">
+                <strong>Paikit Health Center</strong>
+                <span class="mockup-badge">4 Portals</span>
+              </div>
+              <div class="mockup-stats">
+                <div class="stat-box"><small>Appointments</small><b>24 Today</b></div>
+                <div class="stat-box"><small>Conflicts</small><b>0 Found</b></div>
+              </div>
+              <div class="mockup-list">
+                <div class="mockup-item"><span>Patient Booking</span><span>Active</span></div>
+                <div class="mockup-item"><span>Doctor History View</span><span>Synced</span></div>
+                <div class="mockup-item"><span>Staff Audit Logs</span><span>Logged</span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-body">
+            <h3>Paikit Health Center Scheduling System</h3>
+            <p>
+              I helped build a web-based consultation appointment and health center management
+              system with separate portals for admins, staff, doctors, and patients. I worked on
+              scheduling conflict detection, patient consultation history lists, staff activity
+              logs, and preparing the files for Hostinger deployment.
+            </p>
+            <div class="tools-row">
+              <span class="tool-tag">HTML / CSS / JS</span>
+              <span class="tool-tag">PHP &amp; MySQL</span>
+              <span class="tool-tag">Visual Studio</span>
+              <span class="tool-tag">Hostinger</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="btn btn-small btn-primary">
+                View Project Link
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="glass-card project-card">
+          <div class="project-preview preview-coffee" aria-label="Driff Coffee Roasters Preview">
+            <div class="browser-bar">
+              <span></span><span></span><span></span>
+              <small>driff-roasters-brand</small>
+            </div>
+            <div class="mockup-body">
+              <div class="mockup-header-row">
+                <strong>Driff Coffee Roasters</strong>
+                <span class="mockup-badge">Est. 2026</span>
+              </div>
+              <div class="mockup-banner">
+                <span>Specialty Brews &amp; Visual Identity</span>
+              </div>
+              <div class="mockup-list">
+                <div class="mockup-item"><span>Logo Variations</span><span>17 Concepts</span></div>
+                <div class="mockup-item"><span>Web Wireframes</span><span>Desktop + Mobile</span></div>
+                <div class="mockup-item"><span>Promo Banners</span><span>Print &amp; Social</span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-body">
+            <h3>Driff Coffee Roasters Brand &amp; Web Concept</h3>
+            <p>
+              I designed a specialty coffee roastery brand concept from scratch, including logo
+              variations, promotional banners, themed menu ideas, and website wireframes to showcase
+              the cafe's visual identity and customer experience.
+            </p>
+            <div class="tools-row">
+              <span class="tool-tag">Canva</span>
+              <span class="tool-tag">Adobe Photoshop</span>
+              <span class="tool-tag">Figma</span>
+              <span class="tool-tag">UI Wireframing</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="btn btn-small btn-primary">
+                View Design Showcase
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="glass-card project-card">
+          <div class="project-preview preview-security" aria-label="Network Security & Privacy Audit Preview">
+            <div class="browser-bar">
+              <span></span><span></span><span></span>
+              <small>netsec-audit-report</small>
+            </div>
+            <div class="mockup-body">
+              <div class="mockup-header-row">
+                <strong>Network &amp; Privacy Study</strong>
+                <span class="mockup-badge">RA 10173</span>
+              </div>
+              <div class="mockup-stats">
+                <div class="stat-box"><small>Router</small><b>ASUS RT-AX88U</b></div>
+                <div class="stat-box"><small>Framework</small><b>NIST CSF 2.0</b></div>
+              </div>
+              <div class="mockup-list">
+                <div class="mockup-item"><span>Firewall Architecture</span><span>Verified</span></div>
+                <div class="mockup-item"><span>Data Privacy Check</span><span>Compliant</span></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-body">
+            <h3>Router Security &amp; Data Privacy Compliance Study</h3>
+            <p>
+              I conducted a cybersecurity configuration review on an ASUS RT-AX88U dual-band router,
+              illustrated firewall architecture diagrams, and compared banking data privacy practices
+              under the Philippine Data Privacy Act of 2012 (RA 10173).
+            </p>
+            <div class="tools-row">
+              <span class="tool-tag">Cisco Packet Tracer</span>
+              <span class="tool-tag">NIST CSF 2.0</span>
+              <span class="tool-tag">RA 10173</span>
+              <span class="tool-tag">Canva Diagrams</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="btn btn-small btn-primary">
+                View Documentation
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- 4. CONTACT SECTION -->
+    <section id="contact" class="section">
+      <div class="section-header">
+        <span class="section-tag">Get In Touch</span>
+        <h2>Contact</h2>
+        <p>Feel free to reach out for collaborations, school projects, or IT opportunities.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="glass-card contact-info-card">
+          <h3>Let's Connect</h3>
+          <p class="contact-desc">
+            The fastest way to reach me is through my email below. You can click the copy button to
+            grab my address right away.
+          </p>
+
+          <div class="email-box">
+            <div>
+              <span class="email-label">Email Address</span>
+              <a href="mailto:khenryan.sembrano@ccc.edu.ph" class="email-link" id="emailText">
+                khenryan.sembrano@ccc.edu.ph
+              </a>
+            </div>
+            <button type="button" class="btn btn-small btn-primary" id="copyEmailBtn">
+              Copy Email
+            </button>
+          </div>
+
+          <div class="contact-meta">
+            <p><strong>Location:</strong> Calamba, Laguna, Philippines</p>
+            <p><strong>School:</strong> City College of Calamba (BSIT)</p>
+          </div>
+
+          <div class="social-links">
+            <a href="https://github.com/" target="_blank" rel="noopener noreferrer" class="social-pill">GitHub</a>
+            <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" class="social-pill">LinkedIn</a>
+          </div>
+        </div>
+
+        <form class="glass-card contact-form" id="contactForm">
+          <h3>Send a Quick Message</h3>
+          <div class="form-group">
+            <label for="senderName">Your Name</label>
+            <input type="text" id="senderName" name="senderName" placeholder="e.g. Juan Dela Cruz" required />
+          </div>
+          <div class="form-group">
+            <label for="senderEmail">Your Email</label>
+            <input type="email" id="senderEmail" name="senderEmail" placeholder="e.g. juan@email.com" required />
+          </div>
+          <div class="form-group">
+            <label for="senderMessage">Message</label>
+            <textarea id="senderMessage" name="senderMessage" rows="4" placeholder="Write your message here..." required></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary full-width">Send Message</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; <span id="year"></span> Khen Ryan Pusod Sembrano &bull; Built with HTML, CSS &amp; JavaScript</p>
+  </footer>
+
+  <!-- Toast Notification -->
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
